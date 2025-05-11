@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-green{
+       color: green;
+        }
+        .text-red{
+       color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    
+<h1 id="h1">Javscript</h1>
+<button id="btn">change color</button>
+<div></div>
+<script>
+
+        let button=document.getElementById("btn")
+        let   heading=document.getElementById("h1");
+        let Hclass=heading.setAttribute("class","text-green")
+button.addEventListener("click",()=>{
+    let  cureentclass=heading.getAttribute("class")
+   let  ss=heading.textContent
+    if(cureentclass==="text-green"){
+heading.setAttribute("class","text-red")
+heading.innerHTML=`<abbr title='Text-Red'>${ss}</abbr>`
+    }if(cureentclass==="text-red"){
+        heading.setAttribute("class","text-green")
+        heading.innerHTML=`<abbr title='Text-Green'>${ss}</abbr>`
+
+    }
+})
+
+
+// let   p=document.createElement("p");
+// let div=document.getElementsByTagName("div")[0];
+// let text=document.createTextNode("Hello  World !  I am learing Javascript  to day my topic is destructring.")
+// p.appendChild(text)
+// div.appendChild(p)
+// p.setAttribute("class","text-green")
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
